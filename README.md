@@ -29,11 +29,13 @@ graph LR
 ```
 
 ##✨ Key Features
-🚫 No Third-Party Tools: No need for Arthas or VisualVM. If you have a JDK, you're ready.
-🕵️ Process Discovery: AI can automatically find which Java apps are running.
-🧵 Deadlock Detection: AI identifies exactly which line of code is causing a thread hang.
-📉 Memory Health: Real-time heap analysis to catch memory leaks early.
-🪶 Ultra-Lightweight: Only runs when called. Zero impact on application performance.
+
+*🚫 No Third-Party Tools: No need for Arthas or VisualVM. If you have a JDK, you're ready.
+*🕵️ Process Discovery: AI can automatically find which Java apps are running.
+*🧵 Deadlock Detection: AI identifies exactly which line of code is causing a thread hang.
+*📉 Memory Health: Real-time heap analysis to catch memory leaks early.
+*🪶 Ultra-Lightweight: Only runs when called. Zero impact on application performance.
+
  *File Directory Structure:
 ---
 ```
@@ -107,19 +109,21 @@ JSON
 ```
 🧪 Testing the "Lab"
 
-We included a JVMTestLab.java that simulates real-world failures. Try asking your AI:
-"@jvm-monitor Check my JVMTestLab app. Why is it stuck?"
-The AI will respond with:
-"I've analyzed the thread dump. Deadlock-Thread-1 is waiting for a lock held by Deadlock-Thread-2 at JVMTestLab:45. Here is the fix..."
+*We included a JVMTestLab.java that simulates real-world failures. Try asking your AI:
+*"@jvm-monitor Check my JVMTestLab app. Why is it stuck?"
+*The AI will respond with:
+*"I've analyzed the thread dump. Deadlock-Thread-1 is waiting for a lock held by Deadlock-Thread-2 at JVMTestLab:45. Here is the fix..."
 
 📊 Comparison
-Feature	: Arthas / VisualVM	JVM-MCP-Bridge
-User	  : Human Expert	AI Agent + Human
-Weight	: Heavy (Java Agent)	Zero (Native Tools)
-Setup	  : Complex	Instant
-Analysis:	Manual	Automated by AI
+
+*Feature	: Arthas / VisualVM	JVM-MCP-Bridge
+*User	  : Human Expert	AI Agent + Human
+*Weight	: Heavy (Java Agent)	Zero (Native Tools)
+*Setup	  : Complex	Instant
+*Analysis:	Manual	Automated by AI
 
 🤝 Contributing
+
 Feel free to open issues or PRs! Let's build the future of Autonomous Debugging.
 <p align="center">
 Made with ❤️ for the Java Ecosystem
